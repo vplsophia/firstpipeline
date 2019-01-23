@@ -7,5 +7,9 @@ pipeline {
                 echo 'truc'
             }
         }
+        stage('Checkout') {
+             milestone()
+             checkout scm
+      }
     }
 }
