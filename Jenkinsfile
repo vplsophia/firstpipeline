@@ -4,12 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
-                echo 'truc'
             }
         }
         stage('Checkout') {
+            steps {
              milestone()
              checkout scm
+            }
       }
     }
 }
