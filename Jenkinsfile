@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bqt 'echo "Hello World"'
+                bat 'echo "Hello World"'
                
             }
         }
