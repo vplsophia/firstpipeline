@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'echo "Hello World"'
-        sh 'echo "nouveau job"'
+        echo 'yoo'
       }
     }
   }
